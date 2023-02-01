@@ -19,6 +19,7 @@ string pickWord(vector<string> arrayOfWords);
 string getInput();
 void displayResult(int* numArray);
 void displayStars();
+void displayWelcomeMessage();
 
 
 //MAIN FUNCTION//
@@ -33,6 +34,8 @@ int main()
 
 	Wordle theGame(secretWord);
 	cout << secretWord << endl;
+
+	displayWelcomeMessage();
 
 	while ( theGame.canAttempt() && !(theGame.isSolved()) ) //still can attempt
 	{
@@ -213,13 +216,23 @@ void displayStars()
 }
 
 /*
+function to display a welcome message and the rules of the game
+*/
+void displayWelcomeMessage()
+{
+	cout << "\nFor every letter of an input word, the program displays one of 3 possibilities: 'G', 'Y', or '-'" << endl;
+	cout << "***'G' means that the letter is in the secret word, and that it's in its correct position***\n";
+	cout << "*'Y' means that the letter is in the secret word, but that it's NOT in its correct position*\n";
+	cout << "'-' means that the letter is NOT in the secret word.\n";
+	cout << "Good luck and enjoy the game!\n"
+}
+
+/*
 ****************
 Guess n˚1: Hello
            GG--Y //11 spaces before
 ****************
 */
-
-
 
 
 //end mainFile.cpp
