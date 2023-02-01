@@ -33,7 +33,7 @@ int main()
 	int numIterations = 0;
 
 	Wordle theGame(secretWord);
-	cout << secretWord << endl;
+	//cout << secretWord << endl;
 
 	displayWelcomeMessage();
 
