@@ -1,5 +1,5 @@
 # Wordle
-Simplified version of the word game "Wordle", developed in C++ and using Object Oriented Programming and the BST Data Structure.
+Text-based version of the word game "Wordle", developed in C++ and using Object Oriented Programming and the BST Data Structure.
 
 # Program/Game description:
 	This is a simplified version of the game "Wordle" which is a web-based word game that gained a lot of popularity in 2022.
