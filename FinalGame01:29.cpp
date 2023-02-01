@@ -105,7 +105,7 @@ Returns the vector array
 vector<string> importDictionary()
 {
 	string inFile = "manywords.txt";
-	string outFile = "Filtered.txt";
+	string outFile = "Filtered_Words.txt";
 
 	fstream inputFile(inFile, ios::in);
 	fstream outputFile(outFile, ios::out);
